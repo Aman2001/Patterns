@@ -1,0 +1,12 @@
+Enter the pattern number
+Enter the number of rows
+**********
+*********
+********
+*******
+******
+*****
+****
+***
+**
+*
