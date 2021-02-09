@@ -45,10 +45,12 @@ void P3()
 	cout<<"In Progess\n";
 }
 int main()
-{   int x;
-    cout<<"Enter the pattern number\n";
-	cin>>x;
-	switch(x)
+{   int choice;
+    char ch;
+do{	
+	cout<<"Enter the pattern number\n";
+	cin>>choice;
+	switch(choice)
 	{
 		case 1: P1();
 		        break;
@@ -56,7 +58,11 @@ int main()
 		        break;
 		case 3: P3();
 		        break;
+	 default:cout<<"Wrong choice, try again\n";
 	}
-	
+cout<<"Do you want to run the program again\n";
+cin>>ch;
+
+}while ((ch=='y')||(ch=='Y'));
 	return 0;
 }
