@@ -65,6 +65,10 @@ void P3()
 	 
 	 }
 }
+void P4() 
+{
+	cout<<"In Progress\n";
+}
 int main()
 {   int choice;
     char ch;
@@ -78,6 +82,8 @@ do{
 		case 2: P2();
 		        break;
 		case 3: P3();
+		        break;
+		case 4: P4();
 		        break;
 	 default:cout<<"Wrong choice, try again\n";
 	}
