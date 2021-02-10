@@ -10,10 +10,10 @@ void P1()
 	****
 	*****
 */
-	int x;
+	int rows;
 	cout<<"Enter the number of rows\n";
-	cin>>x;
-	for(int i=0; i<=x; i++)
+	cin>>rows;
+	for(int i=0; i<=rows; i++)
 	 {
 	 	for(int j=0; j<=i; j++)
 		 cout<<"*";
@@ -30,10 +30,10 @@ void P2()
 	*
 	
 */
-    int x;
+    int rows;
 	cout<<"Enter the number of rows\n";
-	cin>>x;
-	for(int i=x-1; i>=0; i--)
+	cin>>rows;
+	for(int i=rows-1; i>=0; i--)
 	 {
 	 	for(int j=0; j<=i; j++)
 		 cout<<"*";
@@ -42,7 +42,28 @@ void P2()
 }
 void P3()
 {
-	cout<<"In Progess\n";
+	/*
+	    *
+	   * *
+	  * * *
+	 * * * *
+    * * * * *
+	*/
+	int rows;
+	cout<<" Enter the number of rows\n";
+	cin>>rows;
+	int space = rows -1  ;
+	for (int i = 1; i<=rows; i++)
+	 { for (int P_space =1; P_space<=space ;P_space++)
+	       cout<<" ";
+
+		space --;
+
+		for (int P_Star = 1 ; P_Star<=i; P_Star++)
+		 cout<<"* ";    
+	 cout<<"\n";
+	 
+	 }
 }
 int main()
 {   int choice;
